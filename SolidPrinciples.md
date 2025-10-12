@@ -7,3 +7,6 @@ The SOLID principles are composed of five simple but essential principles intend
 3. **L** - Liskov's Substitution Principle
 4. **I** - Interface Segregation Principle
 5. **D** - Dependency Inversion Principle
+
+# Single Responsibility Principle
+# 
