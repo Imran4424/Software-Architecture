@@ -9,4 +9,4 @@ The SOLID principles are composed of five simple but essential principles intend
 5. **D** - Dependency Inversion Principle
 
 # Single Responsibility Principle
-# 
+# Open/Closed Principle
