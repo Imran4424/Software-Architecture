@@ -10,3 +10,4 @@ The SOLID principles are composed of five simple but essential principles intend
 
 # Single Responsibility Principle
 # Open/Closed Principle
+# Liskov's Substitution Principle
