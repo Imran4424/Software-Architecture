@@ -18,8 +18,10 @@ So in our case, every class should have only one responsibility.
 ![Single Responsibility Principle](SingleResponsibilityPrinciple.png)
 
 If we look at the above pictures
-- on the left we have Switch Army knife
+- on the left we have Swiss Army knife
 - on the right we have normal kitchen knife
+
+Although swiss army knife is very useful in day to day life, it violates Single responsibility principle. On the other hand, 
 
 # Open/Closed Principle
 # Liskov's Substitution Principle
