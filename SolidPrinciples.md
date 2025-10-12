@@ -15,6 +15,11 @@ Since we will be using Swift Object Oriented Paradigm, in our case a swift class
 
 So in our case, every class should have only one responsibility.
 
+![Single Responsibility Principle](SingleResponsibilityPrinciple.png)
+
+If we look at the above pictures
+- on the left we have Switch Army knife
+- on the right we have normal kitchen knife
 
 # Open/Closed Principle
 # Liskov's Substitution Principle
