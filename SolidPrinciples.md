@@ -9,7 +9,11 @@ The SOLID principles are composed of five simple but essential principles intend
 5. **D** - Dependency Inversion Principle
 
 # Single Responsibility Principle
-Single Responsibility Principle states that **A class should have only one reason to change, meaning that a class should have only one job**. In other words, every class should have only one responsibility
+Single Responsibility Principle states that **A software component should one and only one responsibility**. Based on the used programming paradigm this component can be a function or a class or a module.
+
+Since we will be using Swift Object Oriented Paradigm, in our case a swift class will be a software component. But if we follow Protocol Oriented Programming in Swift then every protocol will be a software component. 
+
+So in our case, every class should have only one responsibility.
 
 
 # Open/Closed Principle
