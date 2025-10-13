@@ -54,6 +54,7 @@ enum RotateDirection {
 // This class has dual responsibility
 // cube measurement
 // cube rendering
+// that's why cohesion of this class will be low
 class Cube {
     var side: Int = 5
     
@@ -74,7 +75,73 @@ class Cube {
     }
 }
 ```
+let's refactor the codes to increase cohesion
 
+```swift
+enum RotateDirection {
+    case up
+    case down
+    case towardLeft
+    case towardRight
+}
+
+// Now, this class has single responsibility
+// cube measurement
+// that's why cohesion of this class will be high
+class Cube {
+    var side: Int = 5
+    
+    func calculateArea() -> Int {
+        return 6 * side * side
+    }
+    
+    func calculateVolume() -> Int {
+        return side * side * side
+    }
+}
+
+// Now, this class has single responsibility
+// cube rendering
+// that's why cohesion of this class will be high
+class CubeRenderer {
+    func draw() {
+        // renders a 3D object with the cube properties
+    }
+
+    func rotate(angle: Double, direction: RotateDirection) {
+        // Rotate the 3D cube object according to the given parameters
+    }
+}
+```
+
+### Example 2
+```swift
+// Responsibility 1: order math (subtotal, tax, total)
+// Responsibility 2: sending receipt (IO / side effects) 
+// low cohesion
+
+final class Order {
+    var items: [Double] = [19.0, 5.0, 2.0]
+    var taxRate: Double = 0.1
+    var customerEmail: String = "user@example.com"
+    
+    func subtotal() -> Double { 
+        return items.reduce(0, +) 
+    }
+    
+    
+    func total() -> Double { 
+        let s = subtotal(); 
+        return s + s * taxRate
+    }
+    
+    func sendReceipt() {
+        let message = "Thank you! Your total is \(total())"
+        // imagine emailing this message to customerEmail
+        print("📧 emailing to \(customerEmail): \(message)")
+    }
+}
+```
 
 ## Coupling
 
