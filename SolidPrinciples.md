@@ -119,7 +119,6 @@ class CubeRenderer {
 // Responsibility 1: order math (subtotal, tax, total)
 // Responsibility 2: sending receipt (IO / side effects) 
 // low cohesion
-
 final class Order {
     var items: [Double] = [19.0, 5.0, 2.0]
     var taxRate: Double = 0.1
@@ -143,6 +142,55 @@ final class Order {
 }
 ```
 
+Again, let's refactor the above code to achieve high cohesion and single responsibility
+
+```swift
+// Single responsibility: order math
+// high cohesion
+struct Order {
+    let items: [Double]
+    let taxRate: Double
+    
+    func subtotal() -> Double { 
+        return items.reduce(0, +)
+    }
+    
+    func total() -> Double {
+        let s = subtotal()
+        return s + s * taxRate
+    }
+}
+
+// Single responsibility: sending receipts
+// high cohesion
+protocol ReceiptSender {
+    func send(to email: String, body: String)
+}
+
+// Single responsibility: sending receipts
+// high cohesion
+struct ConsoleReceiptSender: ReceiptSender {
+    func send(to email: String, body: String) {
+        // placeholder for real email/notification
+        print("📧 to \(email): \(body)")
+    }
+}
+
+// Orchestrator for the *use case* "issue receipt" (still one reason: composing the two)
+struct ReceiptService {
+    let sender: ReceiptSender
+    
+    func issueReceipt(for order: Order, to email: String) {
+        let body = "Thank you! Your total is \(order.total())"
+        sender.send(to: email, body: body)
+    }
+}
+
+// Usage
+let order = Order(items: [19.0, 5.0, 2.0], taxRate: 0.1)
+let service = ReceiptService(sender: ConsoleReceiptSender())
+service.issueReceipt(for: order, to: "user@example.com")
+```
 ## Coupling
 
 # Open/Closed Principle
