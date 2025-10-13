@@ -192,7 +192,7 @@ let service = ReceiptService(sender: ConsoleReceiptSender())
 service.issueReceipt(for: order, to: "user@example.com")
 ```
 ## Coupling
-Coupling is 
+Coupling is defined 
 
 # Open/Closed Principle
 # Liskov's Substitution Principle
