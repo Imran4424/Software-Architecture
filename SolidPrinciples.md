@@ -31,6 +31,10 @@ Above example was real life example of Single Responsibility Principle. To apply
 ## Cohesion
 Cohesion is the core technical goal of the Single Responsibility Principle(SRP). If a class have multiple responsibility, cohesion refers to how closely related the responsibilities of a class are.
 
+But if Single Responsibility Principle encourages to have only one responsibility per class (in OOP), then why we are measuring coherence between multiple responsibilities.
+
+Single responsibility does not mean single method. Single responsibility is about **one reason to change**. A class with Single responsibility can have multiple properties and methods that work together toward that responsibility. And cohesion measurement helps us to identify responsibility count of a class.
+
 ## Coupling
 
 # Open/Closed Principle
