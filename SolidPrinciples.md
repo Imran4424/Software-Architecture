@@ -23,6 +23,16 @@ If we look at the above pictures
 
 Although swiss army knife is very useful in day to day life, it violates Single responsibility principle. On the other hand, the kitchen knife only have one responsibility, which is to cut some items.
 
+Above example was real life example of Single Responsibility Principle. To apply this principle in Software Design, first we need to understand two important topic
+
+- Cohesion
+- Coupling
+
+## Cohesion
+Cohesion is the core technical goal of the Single Responsibility Principle(SRP). If a class have multiple responsibility, cohesion refers to how closely related the responsibilities of a class are.
+
+## Coupling
+
 # Open/Closed Principle
 # Liskov's Substitution Principle
 # Interface Segregation Principle
