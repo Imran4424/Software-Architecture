@@ -35,6 +35,10 @@ But if Single Responsibility Principle encourages to have only one responsibilit
 
 Single responsibility does not mean single method. Single responsibility is about **one reason to change**. A class with Single responsibility can have multiple properties and methods that work together toward that responsibility. And cohesion measurement helps us to identify responsibility count of a class.
 
+If a class has a single responsibility, then cohesion of that class will be higher. But if the class has more than one responsibility, cohesion of that class will be lower.
+
+To achieve single responsibility, our goal should be to achieve high cohesion of that class.
+
 ## Coupling
 
 # Open/Closed Principle
