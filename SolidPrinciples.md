@@ -192,6 +192,7 @@ let service = ReceiptService(sender: ConsoleReceiptSender())
 service.issueReceipt(for: order, to: "user@example.com")
 ```
 ## Coupling
+C
 
 # Open/Closed Principle
 # Liskov's Substitution Principle
