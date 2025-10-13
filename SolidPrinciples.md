@@ -196,6 +196,7 @@ Coupling is defined as the level of inter dependency between various software co
 
 #### Benefits of Single Responsibility Principle
 - Easy to maintain the code base
+- A class with high cohesion is simpler to test
 
 # Open/Closed Principle
 # Liskov's Substitution Principle
