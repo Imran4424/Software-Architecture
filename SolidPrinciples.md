@@ -192,7 +192,7 @@ let service = ReceiptService(sender: ConsoleReceiptSender())
 service.issueReceipt(for: order, to: "user@example.com")
 ```
 ## Coupling
-Coupling is defined as the level of inter dependency between various software components
+Coupling is defined as the level of inter dependency between various software components.
 
 # Open/Closed Principle
 # Liskov's Substitution Principle
