@@ -194,6 +194,9 @@ service.issueReceipt(for: order, to: "user@example.com")
 ## Coupling
 Coupling is defined as the level of inter dependency between various software components.
 
+#### Benefits of Single Responsibility Principle
+- 
+
 # Open/Closed Principle
 # Liskov's Substitution Principle
 # Interface Segregation Principle
