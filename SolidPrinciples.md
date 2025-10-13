@@ -39,6 +39,43 @@ If a class has a single responsibility, then cohesion of that class will be high
 
 To achieve single responsibility, our goal should be to achieve high cohesion of that class.
 
+Let's see some coding example to understand the topic better
+
+### Example 1
+
+```swift
+enum RotateDirection {
+    case up
+    case down
+    case towardLeft
+    case towardRight
+}
+
+// This class has dual responsibility
+// cube measurement
+// cube rendering
+class Cube {
+    var side: Int = 5
+    
+    func calculateArea() -> Int {
+        return 6 * side * side
+    }
+    
+    func calculateVolume() -> Int {
+        return side * side * side
+    }
+    
+    func draw() {
+        // renders a 3D object with the cube properties
+    }
+    
+    func rotate(angle: Double, direction: RotateDirection) {
+        // Rotate the 3D cube object according to the given parameters
+    }
+}
+```
+
+
 ## Coupling
 
 # Open/Closed Principle
