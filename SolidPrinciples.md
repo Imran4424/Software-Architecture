@@ -21,7 +21,7 @@ If we look at the above pictures
 - on the left we have Swiss Army knife
 - on the right we have normal kitchen knife
 
-Although swiss army knife is very useful in day to day life, it violates Single responsibility principle. On the other hand, 
+Although swiss army knife is very useful in day to day life, it violates Single responsibility principle. On the other hand, the kitchen knife only have one responsibility, which is to cut some items.
 
 # Open/Closed Principle
 # Liskov's Substitution Principle
