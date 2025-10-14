@@ -194,6 +194,8 @@ service.issueReceipt(for: order, to: "user@example.com")
 ## Coupling
 Coupling is defined as the level of inter dependency between various software components.
 
+When modules have a high coupling, they are intimately linked, and modifications to one module may have an impact on other modules.  Low coupling indicates that modules are self-contained and that modifications to one module hardly affect the others.
+
 #### Benefits of Single Responsibility Principle
 - Easy to maintain the code base
 - Enhanced Readability
