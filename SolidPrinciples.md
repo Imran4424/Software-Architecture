@@ -235,7 +235,7 @@ final class InvoiceServiceTight {
 
 Problems: `InvoiceServiceTight` mixes responsibilities (orchestration + choosing concrete implementations) and is hard to test or change. Any change to email or rendering requires editing this class (violates Single Responsibility Principle(SRP) and increases coupling).
 
-Refactor to reduce coupling and align with SRP:
+Refactor to reduce coupling and align with Single Responsibility Principle(SRP):
 
 ```swift
 // Abstractions decouple the service from concrete implementations
