@@ -202,8 +202,8 @@ service.issueReceipt(for: order, to: "user@example.com")
 - Increase cohesion by:
     - Split by reason to change
     - Group behavior with the data it uses
-    - Keep pure logic separate from IO
     - Use protocols to compose cohesive collaborators without mixing concerns
+    - Keep pure logic separate from IO/side-effects.
 
 ## Coupling
 Coupling is defined as the level of inter dependency between various software components.
