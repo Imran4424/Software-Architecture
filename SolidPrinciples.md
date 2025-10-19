@@ -194,8 +194,16 @@ service.issueReceipt(for: order, to: "user@example.com")
 
 ### Notes on Coupling (and SRP)
 - Cohesion is how closely the methods and data inside a class work toward the same
-  - High Cohesion: one clear job
-  - Low Cohesion: mixed, unrelated jobs inside one class.
+    - High Cohesion: one clear job
+    - Low Cohesion: mixed, unrelated jobs inside one class.
+- Symptoms of low cohesion
+    - Component in this case class has multiple reasons to change
+    - Tests for one feature fail when you change an unrelated one.
+- Increase cohesion by:
+    - Split by reason to change
+    - Group behavior with the data it uses
+    - Keep pure logic separate from IO
+    - Use protocols to compose cohesive collaborators without mixing concerns
 
 ## Coupling
 Coupling is defined as the level of inter dependency between various software components.
