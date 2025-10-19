@@ -233,7 +233,7 @@ final class InvoiceServiceTight {
 }
 ```
 
-Problems: `InvoiceServiceTight` mixes responsibilities (orchestration + choosing concrete implementations) and is hard to test or change. Any change to email or rendering requires editing this class (violates SRP and increases coupling).
+Problems: `InvoiceServiceTight` mixes responsibilities (orchestration + choosing concrete implementations) and is hard to test or change. Any change to email or rendering requires editing this class (violates Single Responsibility Principle(SRP) and increases coupling).
 
 Refactor to reduce coupling and align with SRP:
 
