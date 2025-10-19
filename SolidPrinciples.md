@@ -280,6 +280,7 @@ struct InvoiceService {
 // Usage
 let service = InvoiceService(renderer: PDFInvoiceRenderer(),
                              notifier: EmailNotifier())
+
 service.issueInvoice(number: "INV-1001", amount: 149.0, email: "user@example.com")
 
 // Testability: provide fakes to verify behavior without IO
