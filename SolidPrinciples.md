@@ -304,7 +304,11 @@ Key takeaways:
 ### Notes on Coupling (and SRP)
 - Low coupling supports SRP by keeping each class focused and less impacted by unrelated changes.
 - Symptoms of tight coupling: creating dependencies inside a class (`new`/direct initializers), reaching through multiple objects to call deep methods, depending on concrete types, and needing to change many classes for one change.
-- Reduce coupling by: depending on abstractions (protocols), injecting dependencies (initializer injection), following the Law of Demeter, and separating pure logic from IO/side-effects.
+- Reduce coupling by: 
+  - Depending on abstractions (protocols)
+  - Injecting dependencies (initializer injection)
+  - Following the Law of Demeter
+  - Separating pure logic from IO/side-effects.
 
 
 
