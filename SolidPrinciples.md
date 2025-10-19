@@ -311,7 +311,11 @@ Key takeaways:
     - Injecting dependencies (initializer injection)
     - Following the Law of Demeter
         - Principle of least knowledge
-        - A method should talk only to its immediate friends—not to strangers’ strangers. That keeps coupling low and fits SRP.
+        - A method should talk only to its immediate friends—not to friend's friends. That keeps coupling low and fits SRP.
+        - function should call methods on things it directly knows: 
+            - itself, its own properties
+            - the parameters it received
+            - objects it just created.
     - Separating pure logic from IO/side-effects.
 
 
