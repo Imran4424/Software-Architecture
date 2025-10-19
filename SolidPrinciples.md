@@ -284,7 +284,10 @@ let service = InvoiceService(renderer: PDFInvoiceRenderer(),
 service.issueInvoice(number: "INV-1001", amount: 149.0, email: "user@example.com")
 
 // Testability: provide fakes to verify behavior without IO
-struct FakeRenderer: InvoiceRenderer { func render(invoiceNumber: String, amount: Double) -> Data { Data() } }
+struct FakeRenderer: InvoiceRenderer { 
+    func render(invoiceNumber: String, amount: Double) -> Data { Data() } 
+}
+
 struct SpyNotifier: Notifier {
     private(set) var sent: [(String, String, String)] = []
     func send(to address: String, subject: String, body: String) { sent.append((address, subject, body)) }
