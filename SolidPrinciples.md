@@ -364,6 +364,7 @@ So, it is safe to say that Single Responsibility principle is achieved by aiming
 - Reduced Complexity and Dependencies (Simpler dependency graphs)
 
 # Open/Closed Principle
+
 # Liskov's Substitution Principle
 # Interface Segregation Principle
 # Dependency Inversion Principle
