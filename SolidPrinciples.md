@@ -220,6 +220,8 @@ Coupling is defined as the level of inter dependency between various software co
 
 When modules have a high coupling, they are intimately linked, and modifications to one module may have an impact on other modules.  Low coupling indicates that modules are self-contained and that modifications to one module hardly affect the others.
 
+To achieve single responsibility, our goal should be to achieve low coupling of a software component (in this case class).
+
 ### Coupling Example (Swift)
 Below is a small example that first shows tight coupling, then a refactor with low coupling that also aligns with SRP.
 
