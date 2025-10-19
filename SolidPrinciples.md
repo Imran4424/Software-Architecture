@@ -212,6 +212,8 @@ service.issueReceipt(for: order, to: "user@example.com")
       - IO/side-effects
         - Database operations
         - Network calls
+        - File system operations
+        - UI updates
 
 ## Coupling
 Coupling is defined as the level of inter dependency between various software components.
