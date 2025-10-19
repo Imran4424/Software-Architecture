@@ -310,6 +310,7 @@ Key takeaways:
     - Depending on abstractions (protocols)
     - Injecting dependencies (initializer injection)
     - Following the Law of Demeter
+        - Principle of least knowledge
     - Separating pure logic from IO/side-effects.
 
 
