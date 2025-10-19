@@ -361,6 +361,7 @@ So, it is safe to say that Single Responsibility principle is achieved by aiming
 - A class with high cohesion is simpler to test
 - Reduced Complexity and Dependencies
 - Increased reusability
+- Simpler dependency graphs
 
 # Open/Closed Principle
 # Liskov's Substitution Principle
