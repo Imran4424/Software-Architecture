@@ -191,6 +191,9 @@ let order = Order(items: [19.0, 5.0, 2.0], taxRate: 0.1)
 let service = ReceiptService(sender: ConsoleReceiptSender())
 service.issueReceipt(for: order, to: "user@example.com")
 ```
+
+### Notes on Coupling (and SRP)
+
 ## Coupling
 Coupling is defined as the level of inter dependency between various software components.
 
