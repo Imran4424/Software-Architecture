@@ -204,6 +204,8 @@ service.issueReceipt(for: order, to: "user@example.com")
     - Group behavior with the data it uses
     - Use protocols to compose cohesive collaborators without mixing concerns
     - Keep pure logic separate from IO/side-effects.
+      - Pure Logic
+        - 
 
 ## Coupling
 Coupling is defined as the level of inter dependency between various software components.
