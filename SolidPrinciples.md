@@ -313,7 +313,7 @@ Key takeaways:
     - Separating pure logic from IO/side-effects.
 
 
-So, it is safe to say that Single Responsibility principle achieved by aiming for low coupling and high cohesion. 
+So, it is safe to say that Single Responsibility principle is achieved by aiming for low coupling and high cohesion.
 
 #### Benefits of Single Responsibility Principle
 - Easy to maintain the code base
