@@ -205,15 +205,15 @@ service.issueReceipt(for: order, to: "user@example.com")
     - Use protocols to compose cohesive collaborators without mixing concerns
     - Keep pure logic separate from IO/side-effects.
       - Pure Logic
-        - Arithmetic & numeric algorithms
-        - Parsing strings → values
-        - Validation rules
-        - Data transformations
+          - Arithmetic & numeric algorithms
+          - Parsing strings → values
+          - Validation rules
+          - Data transformations
       - IO/side-effects
-        - Database operations
-        - Network calls
-        - File system operations
-        - UI updates
+          - Database operations
+          - Network calls
+          - File system operations
+          - UI updates (SwiftUI / UIKit)
 
 ## Coupling
 Coupling is defined as the level of inter dependency between various software components.
@@ -341,6 +341,16 @@ Key takeaways:
             - the parameters it received
             - objects it just created.
     - Separating pure logic from IO/side-effects.
+      - Pure Logic
+          - Arithmetic & numeric algorithms
+          - Parsing strings → values
+          - Validation rules
+          - Data transformations
+      - IO/side-effects
+          - Database operations
+          - Network calls
+          - File system operations
+          - UI updates (SwiftUI / UIKit)
 
 
 So, it is safe to say that Single Responsibility principle is achieved by aiming for low coupling and high cohesion.
