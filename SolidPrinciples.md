@@ -196,6 +196,107 @@ Coupling is defined as the level of inter dependency between various software co
 
 When modules have a high coupling, they are intimately linked, and modifications to one module may have an impact on other modules.  Low coupling indicates that modules are self-contained and that modifications to one module hardly affect the others.
 
+### Coupling Example (Swift)
+Below is a small example that first shows tight coupling, then a refactor with low coupling that also aligns with SRP.
+
+```swift
+// Tightly coupled: InvoiceService constructs and controls concrete collaborators.
+// Changes to email/PDF behavior require edits here.
+
+final class EmailClient {
+    func send(to address: String, subject: String, body: String) {
+        print("Email to \(address): \(subject) — \(body)")
+    }
+}
+
+final class PDFRenderer {
+    func render(invoiceNumber: String, amount: Double) -> Data {
+        // pretend to generate a PDF
+        return Data("Invoice #\(invoiceNumber): \(amount)".utf8)
+    }
+}
+
+final class InvoiceServiceTight {
+    // Direct construction = tight coupling
+    private let mailer = EmailClient()
+    private let renderer = PDFRenderer()
+
+    func issueInvoice(number: String, amount: Double, email: String) {
+        let pdf = renderer.render(invoiceNumber: number, amount: amount)
+        // … store pdf somewhere …
+        mailer.send(
+            to: email,
+            subject: "Your invoice #\(number)",
+            body: "Amount due: \(amount). PDF bytes: \(pdf.count)"
+        )
+    }
+}
+```
+
+Problems: `InvoiceServiceTight` mixes responsibilities (orchestration + choosing concrete implementations) and is hard to test or change. Any change to email or rendering requires editing this class (violates SRP and increases coupling).
+
+Refactor to reduce coupling and align with SRP:
+
+```swift
+// Abstractions decouple the service from concrete implementations
+protocol InvoiceRenderer {
+    func render(invoiceNumber: String, amount: Double) -> Data
+}
+
+protocol Notifier {
+    func send(to address: String, subject: String, body: String)
+}
+
+// Concrete implementations can vary independently
+struct PDFInvoiceRenderer: InvoiceRenderer {
+    func render(invoiceNumber: String, amount: Double) -> Data {
+        Data("Invoice #\(invoiceNumber): \(amount)".utf8)
+    }
+}
+
+struct EmailNotifier: Notifier {
+    func send(to address: String, subject: String, body: String) {
+        print("Email to \(address): \(subject) — \(body)")
+    }
+}
+
+// Single responsibility: orchestrate the invoicing use case
+// Low coupling: depends on protocols, receives dependencies via injection
+struct InvoiceService {
+    let renderer: InvoiceRenderer
+    let notifier: Notifier
+
+    func issueInvoice(number: String, amount: Double, email: String) {
+        let pdf = renderer.render(invoiceNumber: number, amount: amount)
+        // … store pdf …
+        notifier.send(to: email,
+                      subject: "Your invoice #\(number)",
+                      body: "Amount due: \(amount). PDF bytes: \(pdf.count)")
+    }
+}
+
+// Usage
+let service = InvoiceService(renderer: PDFInvoiceRenderer(),
+                             notifier: EmailNotifier())
+service.issueInvoice(number: "INV-1001", amount: 149.0, email: "user@example.com")
+
+// Testability: provide fakes to verify behavior without IO
+struct FakeRenderer: InvoiceRenderer { func render(invoiceNumber: String, amount: Double) -> Data { Data() } }
+struct SpyNotifier: Notifier {
+    private(set) var sent: [(String, String, String)] = []
+    func send(to address: String, subject: String, body: String) { sent.append((address, subject, body)) }
+}
+```
+
+Key takeaways:
+- Tight coupling often coexists with SRP violations because a class both does its job and manages concrete collaborators.
+- Using protocols plus dependency injection lowers coupling, isolates reasons to change, and improves testability and reuse.
+
+### Notes on Coupling (and SRP)
+- Aim for low coupling and high cohesion. Low coupling supports SRP by keeping each class focused and less impacted by unrelated changes.
+- Symptoms of tight coupling: creating dependencies inside a class (`new`/direct initializers), reaching through multiple objects to call deep methods, depending on concrete types, and needing to change many classes for one change.
+- Reduce coupling by: depending on abstractions (protocols), injecting dependencies (initializer injection), following the Law of Demeter, and separating pure logic from IO/side-effects.
+
 #### Benefits of Single Responsibility Principle
 - Easy to maintain the code base
 - Enhanced Readability
