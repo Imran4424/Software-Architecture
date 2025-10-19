@@ -311,6 +311,7 @@ Key takeaways:
     - Injecting dependencies (initializer injection)
     - Following the Law of Demeter
         - Principle of least knowledge
+        - A method should talk only to its immediate friends—not to strangers’ strangers. That keeps coupling low and fits SRP.
     - Separating pure logic from IO/side-effects.
 
 
