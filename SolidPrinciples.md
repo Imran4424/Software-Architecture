@@ -205,7 +205,13 @@ service.issueReceipt(for: order, to: "user@example.com")
     - Use protocols to compose cohesive collaborators without mixing concerns
     - Keep pure logic separate from IO/side-effects.
       - Pure Logic
-        - 
+        - Arithmetic & numeric algorithms
+        - Parsing strings → values
+        - Validation rules
+        - Data transformations
+      - IO/side-effects
+        - Database operations
+        - Network calls
 
 ## Coupling
 Coupling is defined as the level of inter dependency between various software components.
