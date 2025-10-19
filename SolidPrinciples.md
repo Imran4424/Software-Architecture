@@ -365,6 +365,8 @@ So, it is safe to say that Single Responsibility principle is achieved by aiming
 
 # Open/Closed Principle
 
+Software component should be closed for modification, but open for extension. 
+
 # Liskov's Substitution Principle
 # Interface Segregation Principle
 # Dependency Inversion Principle
