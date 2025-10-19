@@ -290,7 +290,10 @@ struct FakeRenderer: InvoiceRenderer {
 
 struct SpyNotifier: Notifier {
     private(set) var sent: [(String, String, String)] = []
-    func send(to address: String, subject: String, body: String) { sent.append((address, subject, body)) }
+
+    func send(to address: String, subject: String, body: String) { 
+        sent.append((address, subject, body)) 
+    }
 }
 ```
 
