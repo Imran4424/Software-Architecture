@@ -269,9 +269,11 @@ struct InvoiceService {
     func issueInvoice(number: String, amount: Double, email: String) {
         let pdf = renderer.render(invoiceNumber: number, amount: amount)
         // … store pdf …
-        notifier.send(to: email,
-                      subject: "Your invoice #\(number)",
-                      body: "Amount due: \(amount). PDF bytes: \(pdf.count)")
+        notifier.send(
+            to: email,
+            subject: "Your invoice #\(number)",
+            body: "Amount due: \(amount). PDF bytes: \(pdf.count)"
+        )
     }
 }
 
