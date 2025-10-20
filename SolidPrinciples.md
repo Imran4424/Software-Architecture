@@ -480,7 +480,9 @@ struct NoDiscount: DiscountStrategy {
     } 
 }
 
-struct TenPercent: DiscountStrategy { func apply(to total: Double) -> Double { total * 0.9 } }
+struct TenPercent: DiscountStrategy { 
+    func apply(to total: Double) -> Double { total * 0.9 } 
+}
 
 // Key-based registry allows adding new strategies without modifying engine
 typealias DiscountCode = String
