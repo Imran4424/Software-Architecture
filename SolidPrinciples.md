@@ -377,7 +377,7 @@ In practice this typically means depending on abstractions (protocols), using co
 - Prefer composition over inheritance; pass behavior in as dependencies.
 - Combined with Single Responsibility Principle(SRP), each class has one reason to change, and new behavior lives in new classes.
 
-### Example 1: Shapes Area (violation → Open/Closed Principle (OCP)
+### Example 1: Shapes Area (violation → Open/Closed Principle (OCP))
 
 ```swift
 // Violation: adding a new shape requires modifying totalArea (edit existing code)
