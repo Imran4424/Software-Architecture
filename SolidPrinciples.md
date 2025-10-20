@@ -459,8 +459,10 @@ struct Order {
 
 func discountedTotal(order: Order, tier: CustomerTier) -> Double {
     switch tier {
-    case .standard: return order.total
-    case .gold: return order.total * 0.9
+    case .standard: 
+        return order.total
+    case .gold: 
+        return order.total * 0.9
     }
 }
 ```
