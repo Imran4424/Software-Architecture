@@ -500,7 +500,7 @@ struct DiscountEngine {
         guard let code, let s = strategies[code] else { 
             return order.total 
         }
-        
+
         return s.apply(to: order.total)
     }
 
@@ -519,7 +519,10 @@ let order = Order(total: 200)
 let goldTotal = engine.total(for: order, code: "GOLD") // 180
 
 // Add a new strategy later (no edits to DiscountEngine)
-struct Flat20Off: DiscountStrategy { func apply(to total: Double) -> Double { max(0, total - 20) } }
+struct Flat20Off: DiscountStrategy { 
+    func apply(to total: Double) -> Double { max(0, total - 20) } 
+}
+
 engine.register(Flat20Off(), for: "PROMO20")
 ```
 
