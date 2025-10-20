@@ -409,7 +409,9 @@ protocol ShapeProtocol {
 
 struct Circle: ShapeProtocol {
     let radius: Double
-    func area() -> Double { .pi * radius * radius }
+    func area() -> Double { 
+        return .pi * radius * radius 
+    }
 }
 
 struct Rectangle: ShapeProtocol {
