@@ -521,7 +521,7 @@ let goldTotal = engine.total(for: order, code: "GOLD") // 180
 // Add a new strategy later (no edits to DiscountEngine)
 struct Flat20Off: DiscountStrategy { 
     func apply(to total: Double) -> Double { 
-        max(0, total - 20)    
+        return max(0, total - 20)    
     } 
 }
 
