@@ -398,7 +398,7 @@ func totalArea(_ shapes: [Shape]) -> Double {
 }
 ```
 
-Refactor with OCP using polymorphism:
+Refactor with Open/Closed Principle(OCP) using polymorphism:
 
 ```swift
 // Open for extension: add new Shape conformers
