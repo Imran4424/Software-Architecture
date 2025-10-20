@@ -375,9 +375,9 @@ In practice this typically means depending on abstractions (protocols), using co
 - Extend via new types that conform to protocols; avoid modifying core algorithms when adding cases.
 - Replace long `if`/`switch` conditionals on “type” with polymorphism (strategy, state, command, etc.).
 - Prefer composition over inheritance; pass behavior in as dependencies.
-- Combined with SRP, each class has one reason to change, and new behavior lives in new classes.
+- Combined with Single Responsibility Principle(SRP), each class has one reason to change, and new behavior lives in new classes.
 
-### Example 1: Shapes Area (violation → OCP)
+### Example 1: Shapes Area (violation → Open/Closed Principle (OCP)
 
 ```swift
 // Violation: adding a new shape requires modifying totalArea (edit existing code)
