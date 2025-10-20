@@ -367,6 +367,138 @@ So, it is safe to say that Single Responsibility principle is achieved by aiming
 
 Software component should be closed for modification, but open for extension. 
 
+Open/Closed Principle (OCP) states that software entities should be **open for extension, but closed for modification**. You should be able to add new behavior by adding new code, not by changing existing, tested code. 
+
+In practice this typically means depending on abstractions (protocols), using composition, and leveraging polymorphism instead of conditional explosions.
+
+### Notes
+- Extend via new types that conform to protocols; avoid modifying core algorithms when adding cases.
+- Replace long `if`/`switch` conditionals on “type” with polymorphism (strategy, state, command, etc.).
+- Prefer composition over inheritance; pass behavior in as dependencies.
+- Combined with SRP, each class has one reason to change, and new behavior lives in new classes.
+
+### Example 1: Shapes Area (violation → OCP)
+
+```swift
+// Violation: adding a new shape requires modifying totalArea (edit existing code)
+enum Shape {
+    case circle(radius: Double)
+    case rectangle(width: Double, height: Double)
+}
+
+func totalArea(_ shapes: [Shape]) -> Double {
+    return shapes.reduce(0) { sum, shape in
+        switch shape {
+        case let .circle(r):
+            return sum + .pi * r * r
+        case let .rectangle(w, h):
+            return sum + w * h
+        }
+    }
+}
+```
+
+Refactor with OCP using polymorphism:
+
+```swift
+// Open for extension: add new Shape conformers
+// Closed for modification: AreaCalculator never changes
+protocol ShapeProtocol { func area() -> Double }
+
+struct Circle: ShapeProtocol {
+    let radius: Double
+    func area() -> Double { .pi * radius * radius }
+}
+
+struct Rectangle: ShapeProtocol {
+    let width: Double
+    let height: Double
+    func area() -> Double { width * height }
+}
+
+struct AreaCalculator {
+    func totalArea(_ shapes: [ShapeProtocol]) -> Double {
+        shapes.reduce(0) { $0 + $1.area() }
+    }
+}
+
+// Usage: adding Triangle requires only a new type, not changes to AreaCalculator
+struct Triangle: ShapeProtocol {
+    let base: Double, height: Double
+    func area() -> Double { 0.5 * base * height }
+}
+
+let calc = AreaCalculator()
+let shapes: [ShapeProtocol] = [Circle(radius: 2), Rectangle(width: 3, height: 4), Triangle(base: 3, height: 5)]
+let area = calc.totalArea(shapes)
+```
+
+### Example 2: Discount Strategy (extensible without edits)
+
+```swift
+// Violation: adding a new tier requires editing this function
+enum CustomerTier { case standard, gold }
+
+struct Order { let total: Double }
+
+func discountedTotal(order: Order, tier: CustomerTier) -> Double {
+    switch tier {
+    case .standard: return order.total
+    case .gold: return order.total * 0.9
+    }
+}
+```
+
+Refactor to OCP with strategies and registration:
+
+```swift
+protocol DiscountStrategy { func apply(to total: Double) -> Double }
+
+struct NoDiscount: DiscountStrategy { func apply(to total: Double) -> Double { total } }
+struct TenPercent: DiscountStrategy { func apply(to total: Double) -> Double { total * 0.9 } }
+
+// Key-based registry allows adding new strategies without modifying engine
+typealias DiscountCode = String
+
+struct DiscountEngine {
+    private var strategies: [DiscountCode: any DiscountStrategy]
+
+    init(strategies: [DiscountCode: any DiscountStrategy]) {
+        self.strategies = strategies
+    }
+
+    func total(for order: Order, code: DiscountCode?) -> Double {
+        guard let code, let s = strategies[code] else { return order.total }
+        return s.apply(to: order.total)
+    }
+
+    mutating func register(_ strategy: any DiscountStrategy, for code: DiscountCode) {
+        strategies[code] = strategy
+    }
+}
+
+// Usage
+var engine = DiscountEngine(strategies: [
+    "STANDARD": NoDiscount(),
+    "GOLD": TenPercent()
+])
+
+let order = Order(total: 200)
+let goldTotal = engine.total(for: order, code: "GOLD") // 180
+
+// Add a new strategy later (no edits to DiscountEngine)
+struct Flat20Off: DiscountStrategy { func apply(to total: Double) -> Double { max(0, total - 20) } }
+engine.register(Flat20Off(), for: "PROMO20")
+```
+
+#### Benefits of Open/Closed Principle
+- Improves maintainability and stability by protecting existing, tested code.
+- Enables safer feature growth by adding new types/strategies instead of editing core logic.
+- Reduces regression risk and merge conflicts when extending behavior.
+- Encourages clean boundaries, protocols, and composition.
+
+Software component should be closed for modification, but open for extension. 
+
 # Liskov's Substitution Principle
 # Interface Segregation Principle
 # Dependency Inversion Principle
