@@ -403,7 +403,9 @@ Refactor with Open/Closed Principle(OCP) using polymorphism:
 ```swift
 // Open for extension: add new Shape conformers
 // Closed for modification: AreaCalculator never changes
-protocol ShapeProtocol { func area() -> Double }
+protocol ShapeProtocol { 
+    func area() -> Double 
+}
 
 struct Circle: ShapeProtocol {
     let radius: Double
