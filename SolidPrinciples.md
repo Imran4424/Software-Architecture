@@ -453,7 +453,9 @@ enum CustomerTier {
     case gold 
 }
 
-struct Order { let total: Double }
+struct Order { 
+    let total: Double 
+}
 
 func discountedTotal(order: Order, tier: CustomerTier) -> Double {
     switch tier {
