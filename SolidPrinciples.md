@@ -417,6 +417,7 @@ struct Circle: ShapeProtocol {
 struct Rectangle: ShapeProtocol {
     let width: Double
     let height: Double
+    
     func area() -> Double { 
         return width * height 
     }
