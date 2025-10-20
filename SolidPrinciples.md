@@ -497,7 +497,10 @@ struct DiscountEngine {
     }
 
     func total(for order: Order, code: DiscountCode?) -> Double {
-        guard let code, let s = strategies[code] else { return order.total }
+        guard let code, let s = strategies[code] else { 
+            return order.total 
+        }
+        
         return s.apply(to: order.total)
     }
 
