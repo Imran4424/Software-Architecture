@@ -448,7 +448,10 @@ let area = areaCalculator.totalArea(shapes)
 
 ```swift
 // Violation: adding a new tier requires editing this function
-enum CustomerTier { case standard, gold }
+enum CustomerTier { 
+    case standard 
+    case gold 
+}
 
 struct Order { let total: Double }
 
