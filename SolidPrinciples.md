@@ -470,7 +470,9 @@ func discountedTotal(order: Order, tier: CustomerTier) -> Double {
 Refactor to Open/Closed Principle(OCP) with strategies and registration:
 
 ```swift
-protocol DiscountStrategy { func apply(to total: Double) -> Double }
+protocol DiscountStrategy { 
+    func apply(to total: Double) -> Double 
+}
 
 struct NoDiscount: DiscountStrategy { func apply(to total: Double) -> Double { total } }
 struct TenPercent: DiscountStrategy { func apply(to total: Double) -> Double { total * 0.9 } }
