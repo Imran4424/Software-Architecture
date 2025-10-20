@@ -537,4 +537,5 @@ engine.register(Flat20Off(), for: "PROMO20")
 # Liskov's Substitution Principle
 
 # Interface Segregation Principle
+
 # Dependency Inversion Principle
