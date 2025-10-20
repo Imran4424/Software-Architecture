@@ -534,6 +534,7 @@ engine.register(Flat20Off(), for: "PROMO20")
 - Reduces regression risk and merge conflicts when extending behavior.
 - Encourages clean boundaries, protocols, and composition.
 
+
 # Liskov's Substitution Principle
 # Interface Segregation Principle
 # Dependency Inversion Principle
