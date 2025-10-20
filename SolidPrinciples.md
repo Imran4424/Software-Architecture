@@ -365,7 +365,7 @@ So, it is safe to say that Single Responsibility principle is achieved by aiming
 
 # Open/Closed Principle
 
-Software component should be closed for modification, but open for extension. 
+**Software component should be closed for modification, but open for extension.** 
 
 Open/Closed Principle (OCP) states that software entities should be **open for extension, but closed for modification**. You should be able to add new behavior by adding new code, not by changing existing, tested code. 
 
