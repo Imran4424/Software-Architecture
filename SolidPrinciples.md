@@ -535,5 +535,6 @@ engine.register(Flat20Off(), for: "PROMO20")
 - Encourages clean boundaries, protocols, and composition.
 
 # Liskov's Substitution Principle
+
 # Interface Segregation Principle
 # Dependency Inversion Principle
