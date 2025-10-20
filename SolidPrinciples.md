@@ -431,7 +431,9 @@ struct AreaCalculator {
 // Usage: adding Triangle requires only a new type, not changes to AreaCalculator
 struct Triangle: ShapeProtocol {
     let base: Double, height: Double
-    func area() -> Double { return 0.5 * base * height }
+    func area() -> Double { 
+        return 0.5 * base * height 
+    }
 }
 
 let calc = AreaCalculator()
