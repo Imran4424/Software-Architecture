@@ -439,9 +439,9 @@ struct Triangle: ShapeProtocol {
     }
 }
 
-let calc = AreaCalculator()
+let areaCalculator = AreaCalculator()
 let shapes: [ShapeProtocol] = [Circle(radius: 2), Rectangle(width: 3, height: 4), Triangle(base: 3, height: 5)]
-let area = calc.totalArea(shapes)
+let area = areaCalculator.totalArea(shapes)
 ```
 
 ### Example 2: Discount Strategy (extensible without edits)
