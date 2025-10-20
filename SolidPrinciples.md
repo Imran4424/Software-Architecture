@@ -467,7 +467,7 @@ func discountedTotal(order: Order, tier: CustomerTier) -> Double {
 }
 ```
 
-Refactor to OCP with strategies and registration:
+Refactor to Open/Closed Principle(OCP) with strategies and registration:
 
 ```swift
 protocol DiscountStrategy { func apply(to total: Double) -> Double }
