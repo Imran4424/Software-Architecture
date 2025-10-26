@@ -551,10 +551,11 @@ class HealthInsuranceCustomerProfile {
         // return true or false based on the assessment
     }
 }
-
+```
 Next Scenario - One state insurance extended themselves to support vehicle insurance too
+Using overloaded method to 
 
-
+```swift
 class InsurancePremiumDiscountCalculator {
     func calculatePremiumDiscountPercent(HealthInsuranceCustomerProfile customer) {
         if customer.isLoyalCustomer() -> Int {
