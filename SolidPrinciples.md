@@ -547,7 +547,9 @@ class InsurancePremiumDiscountCalculator {
 }
 
 class HealthInsuranceCustomerProfile {
-
+    func isLoyalCustomer() -> Bool {
+        // return true or false based on the assessment
+    }
 }
 ```
 
