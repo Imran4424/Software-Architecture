@@ -534,7 +534,7 @@ engine.register(Flat20Off(), for: "PROMO20")
 - Improves maintainability and stability by protecting existing, tested code.
 - Enables safer feature growth by adding new types/strategies instead of editing core logic.
 - Ease of adding new features leads to minimal cost of developing and testing software.
-- Open closed principle often requires decoupling which in turn automatically follows the Single responsibility principle.
+- Open Closed Principle often requires decoupling which in turn automatically follows the Single responsibility principle.
 - Reduces regression risk and merge conflicts when extending behavior.
 - Encourages clean boundaries, protocols, and composition.
 
@@ -543,3 +543,7 @@ engine.register(Flat20Off(), for: "PROMO20")
 # Interface Segregation Principle
 
 # Dependency Inversion Principle
+
+
+- SOLID principles are intertwined and interdependent.
+- SOLID principles are most effective when they are combined together.
