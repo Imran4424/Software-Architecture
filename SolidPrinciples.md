@@ -643,7 +643,7 @@ not only we need to implement the new or modified features but also we need to m
 Let's use protocol to fix this issue which follows open closed principle
 ```swift
 protocol InsuranceCustomerProfile {
-    
+    func isLoyalCustomer() -> Bool
 }
 ```
 
