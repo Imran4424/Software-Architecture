@@ -547,3 +547,4 @@ engine.register(Flat20Off(), for: "PROMO20")
 
 - SOLID principles are intertwined and interdependent.
 - SOLID principles are most effective when they are combined together.
+- It is most important to get a wholesome view of all SOLID principles.
