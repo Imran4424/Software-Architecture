@@ -538,7 +538,7 @@ Scenario - One state insurance (currently handles only one type of insurance)
 ```swift
 class InsurancePremiumDiscountCalculator {
     func calculatePremiumDiscountPercent(HealthInsuranceCustomerProfile customer) {
-        if customer.isLoyalCustomer() {
+        if customer.isLoyalCustomer() -> Int {
             return 20
         }
 
@@ -547,7 +547,7 @@ class InsurancePremiumDiscountCalculator {
 }
 
 class HealthInsuranceCustomerProfile {
-    
+
 }
 ```
 
