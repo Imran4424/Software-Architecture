@@ -637,7 +637,7 @@ class HomeInsuranceCustomerProfile {
 }
 ```
 
-This is a very bad design
+This is a very bad design because every time the Insurance company extend or modify their business not only we need to implement the new or modified features but also we need to modify the main class too.
 
 #### Benefits of Open/Closed Principle
 - Improves maintainability and stability by protecting existing, tested code.
