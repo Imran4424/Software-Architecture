@@ -553,7 +553,21 @@ class HealthInsuranceCustomerProfile {
 }
 
 Next Scenario - One state insurance extended themselves to support vehicle insurance too
+class InsurancePremiumDiscountCalculator {
+    func calculatePremiumDiscountPercent(HealthInsuranceCustomerProfile customer) {
+        if customer.isLoyalCustomer() -> Int {
+            return 20
+        }
 
+        return 0
+    }
+}
+
+class HealthInsuranceCustomerProfile {
+    func isLoyalCustomer() -> Bool {
+        // return true or false based on the assessment
+    }
+}
 ```
 
 #### Benefits of Open/Closed Principle
