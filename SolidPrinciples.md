@@ -587,6 +587,10 @@ class VehicleInsuranceCustomerProfile {
 }
 ```
 
+Next Scenario - One state insurance extended themselves to support Home insurance too
+Now supporting Health, Vehicle and Home Insurance
+Using method overloading to accommodate three insurance support in same class
+
 #### Benefits of Open/Closed Principle
 - Improves maintainability and stability by protecting existing, tested code.
 - Enables safer feature growth by adding new types/strategies instead of editing core logic.
