@@ -8,6 +8,10 @@ The SOLID principles are composed of five simple but essential principles intend
 4. **I** - Interface Segregation Principle
 5. **D** - Dependency Inversion Principle
 
+- SOLID principles are intertwined and interdependent.
+- SOLID principles are most effective when they are combined together.
+- It is most important to get a wholesome view of all SOLID principles.
+
 # Single Responsibility Principle
 Single Responsibility Principle states that **A software component should one and only one responsibility**. Based on the used programming paradigm this component can be a function or a class or a module.
 
@@ -548,6 +552,3 @@ engine.register(Flat20Off(), for: "PROMO20")
 # Dependency Inversion Principle
 
 
-- SOLID principles are intertwined and interdependent.
-- SOLID principles are most effective when they are combined together.
-- It is most important to get a wholesome view of all SOLID principles.
