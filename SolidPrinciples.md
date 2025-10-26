@@ -546,7 +546,9 @@ class InsurancePremiumDiscountCalculator {
     }
 }
 
-class Health
+class HealthInsuranceCustomerProfile {
+    
+}
 ```
 
 #### Benefits of Open/Closed Principle
