@@ -645,6 +645,16 @@ Let's use protocol to fix this issue which follows open closed principle
 protocol InsuranceCustomerProfile {
     func isLoyalCustomer() -> Bool
 }
+
+class InsurancePremiumDiscountCalculator {
+    func calculatePremiumDiscountPercent(HealthInsuranceCustomerProfile customer) {
+        if customer.isLoyalCustomer() -> Int {
+            return 20
+        }
+
+        return 0
+    }
+}
 ```
 
 #### Benefits of Open/Closed Principle
