@@ -528,6 +528,8 @@ struct Flat20Off: DiscountStrategy {
 engine.register(Flat20Off(), for: "PROMO20")
 ```
 
+### Example 3
+
 #### Benefits of Open/Closed Principle
 - Improves maintainability and stability by protecting existing, tested code.
 - Enables safer feature growth by adding new types/strategies instead of editing core logic.
