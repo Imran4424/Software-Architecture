@@ -647,7 +647,7 @@ protocol InsuranceCustomerProfile {
 }
 
 class InsurancePremiumDiscountCalculator {
-    func calculatePremiumDiscountPercent(HealthInsuranceCustomerProfile customer) {
+    func calculatePremiumDiscountPercent(InsuranceCustomerProfile customer) {
         if customer.isLoyalCustomer() -> Int {
             return 20
         }
