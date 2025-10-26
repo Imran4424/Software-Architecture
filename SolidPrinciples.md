@@ -543,7 +543,7 @@ engine.register(Flat20Off(), for: "PROMO20")
 - Encourages clean boundaries, protocols, and composition.
 
 #### Caution
-- Do not follow open closed principle blindly.
+- Do not follow the open closed principle blindly.
 
 # Liskov's Substitution Principle
 
