@@ -544,6 +544,7 @@ engine.register(Flat20Off(), for: "PROMO20")
 
 #### Caution
 - Do not follow the open closed principle blindly.
+- You will end up with a huge number of classes that can complicate overall design.
 
 # Liskov's Substitution Principle
 
