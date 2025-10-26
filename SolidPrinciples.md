@@ -608,6 +608,14 @@ class InsurancePremiumDiscountCalculator {
 
         return 0
     }
+
+    func calculatePremiumDiscountPercent(HomeInsuranceCustomerProfile customer) {
+        if customer.isLoyalCustomer() -> Int {
+            return 20
+        }
+
+        return 0
+    }
 }
 
 class HealthInsuranceCustomerProfile {
