@@ -591,6 +591,38 @@ Next Scenario - One state insurance extended themselves to support Home insuranc
 Now supporting Health, Vehicle and Home Insurance
 Using method overloading to accommodate three insurance support in same class
 
+```swift
+class InsurancePremiumDiscountCalculator {
+    func calculatePremiumDiscountPercent(HealthInsuranceCustomerProfile customer) {
+        if customer.isLoyalCustomer() -> Int {
+            return 20
+        }
+
+        return 0
+    }
+
+    func calculatePremiumDiscountPercent(VehicleInsuranceCustomerProfile customer) {
+        if customer.isLoyalCustomer() -> Int {
+            return 20
+        }
+
+        return 0
+    }
+}
+
+class HealthInsuranceCustomerProfile {
+    func isLoyalCustomer() -> Bool {
+        // return true or false based on the assessment
+    }
+}
+
+class VehicleInsuranceCustomerProfile {
+    func isLoyalCustomer() -> Bool {
+        // return true or false based on the assessment
+    }
+}
+```
+
 #### Benefits of Open/Closed Principle
 - Improves maintainability and stability by protecting existing, tested code.
 - Enables safer feature growth by adding new types/strategies instead of editing core logic.
