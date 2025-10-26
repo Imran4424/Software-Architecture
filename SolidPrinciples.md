@@ -656,19 +656,19 @@ class InsurancePremiumDiscountCalculator {
     }
 }
 
-class HealthInsuranceCustomerProfile {
+class HealthInsuranceCustomerProfile: InsuranceCustomerProfile {
     func isLoyalCustomer() -> Bool {
         // return true or false based on the assessment
     }
 }
 
-class VehicleInsuranceCustomerProfile {
+class VehicleInsuranceCustomerProfile: InsuranceCustomerProfile {
     func isLoyalCustomer() -> Bool {
         // return true or false based on the assessment
     }
 }
 
-class HomeInsuranceCustomerProfile {
+class HomeInsuranceCustomerProfile: InsuranceCustomerProfile {
     func isLoyalCustomer() -> Bool {
         // return true or false based on the assessment
     }
