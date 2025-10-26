@@ -637,6 +637,8 @@ class HomeInsuranceCustomerProfile {
 }
 ```
 
+This is a very bad design
+
 #### Benefits of Open/Closed Principle
 - Improves maintainability and stability by protecting existing, tested code.
 - Enables safer feature growth by adding new types/strategies instead of editing core logic.
