@@ -553,6 +553,7 @@ class HealthInsuranceCustomerProfile {
 }
 
 Next Scenario - One state insurance extended themselves to support vehicle insurance too
+
 ```
 
 #### Benefits of Open/Closed Principle
