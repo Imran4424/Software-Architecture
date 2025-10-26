@@ -533,7 +533,7 @@ engine.register(Flat20Off(), for: "PROMO20")
 ```
 
 ### Example 3
-Scenario - One state insurance (currently handles only one type of insurance)
+Scenario - One state insurance (currently handles only health type of insurance)
 
 ```swift
 class InsurancePremiumDiscountCalculator {
@@ -551,6 +551,8 @@ class HealthInsuranceCustomerProfile {
         // return true or false based on the assessment
     }
 }
+
+Next Scenario - One state insurance
 ```
 
 #### Benefits of Open/Closed Principle
