@@ -553,6 +553,8 @@ class HealthInsuranceCustomerProfile {
 }
 
 Next Scenario - One state insurance extended themselves to support vehicle insurance too
+
+
 class InsurancePremiumDiscountCalculator {
     func calculatePremiumDiscountPercent(HealthInsuranceCustomerProfile customer) {
         if customer.isLoyalCustomer() -> Int {
