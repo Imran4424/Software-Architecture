@@ -621,6 +621,12 @@ class VehicleInsuranceCustomerProfile {
         // return true or false based on the assessment
     }
 }
+
+class HomeInsuranceCustomerProfile {
+    func isLoyalCustomer() -> Bool {
+        // return true or false based on the assessment
+    }
+}
 ```
 
 #### Benefits of Open/Closed Principle
