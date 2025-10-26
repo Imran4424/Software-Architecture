@@ -546,7 +546,7 @@ class InsurancePremiumDiscountCalculator {
     }
 }
 
-clas
+class
 ```
 
 #### Benefits of Open/Closed Principle
