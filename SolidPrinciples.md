@@ -553,7 +553,7 @@ class HealthInsuranceCustomerProfile {
 }
 ```
 Next Scenario - One state insurance extended themselves to support vehicle insurance too
-Using overloaded method to 
+Using method overloading to accommodate two insurance support in same class
 
 ```swift
 class InsurancePremiumDiscountCalculator {
