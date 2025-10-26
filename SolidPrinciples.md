@@ -533,6 +533,15 @@ engine.register(Flat20Off(), for: "PROMO20")
 ```
 
 ### Example 3
+Scenario - One state insurance (currently handles only one type of insurance)
+
+```swift
+class InsurancePremiumDiscountCalculator {
+    func calculatePremiumDiscountPercent(HealthInsuranceCustomerProfile customer) {
+        
+    }
+}
+```
 
 #### Benefits of Open/Closed Principle
 - Improves maintainability and stability by protecting existing, tested code.
