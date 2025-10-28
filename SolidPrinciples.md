@@ -777,7 +777,6 @@ for car in vehicles {
 }
 ```
 
-
 ## Tell Don't ask
 
 
