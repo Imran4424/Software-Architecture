@@ -703,7 +703,7 @@ Although Liskov's substitution principle build around Object Oriented Programmin
 Now let's talk about the pattern of problems that Liskov's Substition principle helps to solve.
 
 ## Hierarchical Problem
-
+Liskov's Substitution Principle is often violated by forcing inheritance where behavioral contracts don’t actually align.
 
 
 ## Tell Don't ask
