@@ -704,6 +704,8 @@ Now let's talk about the problems that Liskov's Substition principle helps to so
 
 ## Hierarchical Problem
 
+## Tell Don't ask
+
 
 # Interface Segregation Principle
 
