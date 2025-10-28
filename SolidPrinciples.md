@@ -705,6 +705,31 @@ Now let's talk about the pattern of problems that Liskov's Substition principle 
 ## Hierarchical Problem
 Liskov's Substitution Principle is often violated by forcing inheritance where behavioral contracts don’t actually align.
 
+Let's consider a classic pitfall between Car and Formula one racing car.
+
+```swift
+class Car {
+    func getCabinWidth() -> Double {
+        // return cabinWidth
+    }
+}
+
+class FormulaOneRacingCar {
+    override func getCabinWidth() -> Double {
+        fatalError("Error: Formula  one racing car don't have cabin width")
+    }
+
+    func getCockpitWidth() -> Double {
+        // return cockpit width
+    }
+}
+
+let cars: [Car] = [
+    
+] 
+
+```
+
 
 ## Tell Don't ask
 
