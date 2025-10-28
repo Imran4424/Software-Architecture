@@ -691,6 +691,7 @@ With this approach code is now easily expandable as business grows.
 
 # Liskov's Substitution Principle
 
+Objects should be replaceable with their
 
 # Interface Segregation Principle
 
