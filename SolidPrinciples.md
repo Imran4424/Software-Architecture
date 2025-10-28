@@ -697,7 +697,8 @@ What it means that, the functions that use pointers or references to base/super 
 
 Although Liskov's substitution principle build around Object Oriented Programming(OOP) approach, In swift we can use this approach with two programming approach.
 
-- Ob
+- Object Oriented Programming - where relationship will evolve around Super class and sub class
+- Protocol Oriented Programming - where relationship will evolve around protocol and classes or protocol and structs
 
 # Interface Segregation Principle
 
