@@ -868,7 +868,7 @@ Now the above code follows the Liskov's Substitution Principle(LSP).
 - Increased Code Reusability: Generic reference uses
 - Improve Code Quality and Reliability - No need to worry about unexpected behavior of generic reference uses
 - Enhanced Flexibility and Extensibility: Systems can be extended by adding new subclasses without needing to modify existing client code that uses the base class
-- Improves Code Maintainability
+- Improves Code Maintainability.
 - Reduced Coupling: LSP helps lower the coupling between objects, which makes your code more modular and less prone to bugs when changes are made.
 - Easier for testing: We can use dependency injection using mocks for testing purposes.
 
