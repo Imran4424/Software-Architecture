@@ -841,6 +841,7 @@ class InHouseProduct: Product {
     }
 
     override func getDiscount() -> Double {
+        self.applyExtraDiscount()
         return discount
     }
 
