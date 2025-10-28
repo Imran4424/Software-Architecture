@@ -747,6 +747,10 @@ class Vehicle {
 }
 
 class Car: Vehicle {
+    override func getInteriorWidth() -> Double {
+        // return interior Width
+    }
+
     func getCabinWidth() -> Double {
         // return cabinWidth
     }
