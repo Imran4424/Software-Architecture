@@ -695,7 +695,7 @@ Objects should be replaceable with their subtypes without affecting the correctn
 
 What it means that, the functions that use pointers or references to base/super classes must be able to use objects of derived/sub classes without knowing it.
 
-Although Liskov's substitution principle build around Object Oriented Programming(OOP) approach, 
+Although Liskov's substitution principle build around Object Oriented Programming(OOP) approach, In swift we can use this approach with two programming paradigm.
 
 # Interface Segregation Principle
 
