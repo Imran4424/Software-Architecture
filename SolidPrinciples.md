@@ -818,7 +818,7 @@ for product in products {
 }
 ```
 
-The above code runs without crash but it violates Liskov's Substitution Principle(LSP). According to Liskov's Substitution Principle(LSP), we should have been able to deal with all the objects without checking the sub-class types. 
+The above code runs without crash but it violates Liskov's Substitution Principle(LSP). According to Liskov's Substitution Principle(LSP), we should have been able to deal with all the objects without checking and typecasting into the sub-class types. 
 
 # Interface Segregation Principle
 
