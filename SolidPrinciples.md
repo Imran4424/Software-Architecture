@@ -865,7 +865,7 @@ Now the above code follows the Liskov's Substitution Principle(LSP).
 
 #### Benefits of Liskov's Substitution Principle
 
-- sd
+- 
 - d
 
 # Interface Segregation Principle
