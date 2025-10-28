@@ -863,6 +863,8 @@ for product in products {
 
 Now the above code follows the Liskov's Substitution Principle(LSP).
 
+#### Benefits of Open/Closed Principle
+
 # Interface Segregation Principle
 
 # Dependency Inversion Principle
