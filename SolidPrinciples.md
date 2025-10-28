@@ -700,6 +700,9 @@ Although Liskov's substitution principle build around Object Oriented Programmin
 - Object Oriented Programming - where relationship will evolve around Super class and sub class
 - Protocol Oriented Programming - where relationship will evolve around protocol and classes or protocol and structs
 
+
+
+
 # Interface Segregation Principle
 
 # Dependency Inversion Principle
