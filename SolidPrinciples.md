@@ -731,10 +731,13 @@ let cars: [Car] = [
 ]
 
 for car in Cars {
+    // this line will crash
+    // since FormulaOneRacingCar throw fatal error when calling getCabinWidth
+    // which violates Liskov's Substitution Principle
     print("Cabin width:", cars.getCabinWidth())
 }
 ```
-
+Let's address the by breaking the Hi
 
 ## Tell Don't ask
 
