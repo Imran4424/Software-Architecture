@@ -782,8 +782,30 @@ Tell Don’t Ask complements Liskov's Substitution Principle(LSP) and Open/Close
 
 ```swift
 class Product {
-    
+    var discount: Double
+
+    init(discount: Double) {
+        self.discount = discount
+    }
+
+    func getDiscount() -> Double {
+        return discount
+    }
 }
+
+class InHouseProduct: Product {
+    init(discount: Double) {
+        super.init(discount: discount)
+    }
+
+    func applyExtraDiscount() {
+        discount = discount * 2
+    }
+}
+
+let products: [Product] = [
+    
+]
 ```
 
 # Interface Segregation Principle
