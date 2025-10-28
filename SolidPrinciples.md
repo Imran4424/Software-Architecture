@@ -702,7 +702,7 @@ Although Liskov's substitution principle build around Object Oriented Programmin
 
 Now let's talk about the problems that Liskov's Substition principle helps to solve.
 
-There's two types of problem 
+## 
 
 
 # Interface Segregation Principle
