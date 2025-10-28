@@ -742,7 +742,7 @@ Let's address the by breaking the Hierarchy
 ```swift
 class Vehicle {
     func getInteriorWidth() -> Double {
-        
+        // return interior Width
     }
 }
 ```
