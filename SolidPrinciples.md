@@ -810,9 +810,15 @@ let products: [Product] = [
 ]
 
 for product in products {
-    
+    if let inHouse = product as? InHouseProduct {
+        inHouse.applyExtraDiscount()
+    }
+
+    print("Discount amount:", product.getDiscount())
 }
 ```
+
+The above code runs without crash but it violates Liskov's Substitution Principle(LSP). According to Liskov's Substitution Principle(LSP), we should have been able to deal with all the objects without checking  
 
 # Interface Segregation Principle
 
