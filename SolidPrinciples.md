@@ -865,8 +865,8 @@ Now the above code follows the Liskov's Substitution Principle(LSP).
 
 #### Benefits of Liskov's Substitution Principle
 
-- Increased code readability
-- Improve code Quality and Reliability
+- Increased Code Reusability
+- Improve Code Quality and Reliability: 
 
 # Interface Segregation Principle
 
