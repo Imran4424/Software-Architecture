@@ -766,17 +766,14 @@ class FormulaOneRacingCar: Vehicle {
     }
 }
 
-let cars: [Car] = [
+let vehicles: [Vehicle] = [
     Car(),
     Car(),
     FormulaOneRacingCar()
 ]
 
-for car in Cars {
-    // this line will crash
-    // since FormulaOneRacingCar throw fatal error when calling getCabinWidth
-    // which violates Liskov's Substitution Principle
-    print("Cabin width:", cars.getCabinWidth())
+for car in vehicles {
+    print("Interior width:", cars.getInteriorWidth())
 }
 ```
 
