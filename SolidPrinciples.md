@@ -730,7 +730,9 @@ let cars: [Car] = [
     FormulaOneRacingCar()
 ]
 
-
+for car in Cars {
+    print("Cabin width:", cars.getCabinWidth())
+}
 ```
 
 
