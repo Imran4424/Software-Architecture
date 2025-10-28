@@ -818,7 +818,47 @@ for product in products {
 }
 ```
 
-The above code runs without crash but it violates Liskov's Substitution Principle(LSP). According to Liskov's Substitution Principle(LSP), we should have been able to deal with all the objects without checking and typecasting into the sub-class types. 
+The above code runs without crash but it violates Liskov's Substitution Principle(LSP). According to Liskov's Substitution Principle(LSP), we should have been able to deal with all the objects without checking and typecasting into the sub-class types.
+
+We can re-structure the above code to follow Liskov's Substitution Principle(LSP).
+
+```swift
+class Product {
+    var discount: Double
+
+    init(discount: Double = 5.0) {
+        self.discount = discount
+    }
+
+    func getDiscount() -> Double {
+        return discount
+    }
+}
+
+class InHouseProduct: Product {
+    init(discount: Double = 5.0) {
+        super.init(discount: discount)
+    }
+
+    func applyExtraDiscount() {
+        discount = discount * 2
+    }
+}
+
+let products: [Product] = [
+    Product(),
+    Product(),
+    InHouseProduct()
+]
+
+for product in products {
+    if let inHouse = product as? InHouseProduct {
+        inHouse.applyExtraDiscount()
+    }
+
+    print("Discount amount:", product.getDiscount())
+}
+```
 
 # Interface Segregation Principle
 
