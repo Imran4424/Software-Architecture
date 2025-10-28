@@ -780,6 +780,12 @@ for car in vehicles {
 ## Tell Don't ask
 Tell Don’t Ask complements Liskov's Substitution Principle(LSP) and Open/Closed Principle(OCP): instead of asking an object for data and branching on its “type,” tell the object to perform the behavior via a shared abstraction. This keeps clients closed to change and preserves substitutability.
 
+```swift
+class Product {
+    
+}
+```
+
 # Interface Segregation Principle
 
 # Dependency Inversion Principle
