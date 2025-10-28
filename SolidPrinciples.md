@@ -746,7 +746,7 @@ class Vehicle {
     }
 }
 
-class Car {
+class Car: Vehicle {
     func getCabinWidth() -> Double {
         // return cabinWidth
     }
