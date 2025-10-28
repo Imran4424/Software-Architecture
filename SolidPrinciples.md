@@ -737,7 +737,7 @@ for car in Cars {
     print("Cabin width:", cars.getCabinWidth())
 }
 ```
-Let's address the by breaking the Hi
+Let's address the by breaking the Hierarchy
 
 ## Tell Don't ask
 
