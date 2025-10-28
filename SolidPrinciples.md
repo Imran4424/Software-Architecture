@@ -714,7 +714,7 @@ class Car {
     }
 }
 
-class FormulaOneRacingCar {
+class FormulaOneRacingCar: Car {
     override func getCabinWidth() -> Double {
         fatalError("Error: Formula  one racing car don't have cabin width")
     }
@@ -748,11 +748,21 @@ class Vehicle {
 
 class Car: Vehicle {
     override func getInteriorWidth() -> Double {
-        // return interior Width
+        return self.getCabinWidth()
     }
 
     func getCabinWidth() -> Double {
         // return cabinWidth
+    }
+}
+
+class FormulaOneRacingCar {
+    override func getCabinWidth() -> Double {
+        fatalError("Error: Formula  one racing car don't have cabin width")
+    }
+
+    func getCockpitWidth() -> Double {
+        // return cockpit width
     }
 }
 ```
