@@ -784,7 +784,7 @@ Tell Don’t Ask complements Liskov's Substitution Principle(LSP) and Open/Close
 class Product {
     var discount: Double
 
-    init(discount: Double) {
+    init(discount: Double = 5.0) {
         self.discount = discount
     }
 
@@ -794,7 +794,7 @@ class Product {
 }
 
 class InHouseProduct: Product {
-    init(discount: Double) {
+    init(discount: Double = 5.0) {
         super.init(discount: discount)
     }
 
@@ -804,7 +804,9 @@ class InHouseProduct: Product {
 }
 
 let products: [Product] = [
-    
+    Product(),
+    Product(),
+    InHouseProduct()
 ]
 ```
 
