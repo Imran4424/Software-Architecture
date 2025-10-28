@@ -693,6 +693,8 @@ With this approach code is now easily expandable as business grows.
 
 Objects should be replaceable with their subtypes without affecting the correctness of the program.
 
+What it means that, the functions that use pointers or references of 
+
 # Interface Segregation Principle
 
 # Dependency Inversion Principle
