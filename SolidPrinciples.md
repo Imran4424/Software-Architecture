@@ -730,7 +730,7 @@ let cars: [Car] = [
     FormulaOneRacingCar()
 ]
 
-for car in Cars {
+for car in cars {
     // this line will crash
     // since FormulaOneRacingCar throw fatal error when calling getCabinWidth
     // which violates Liskov's Substitution Principle
@@ -808,6 +808,10 @@ let products: [Product] = [
     Product(),
     InHouseProduct()
 ]
+
+for product in products {
+    
+}
 ```
 
 # Interface Segregation Principle
