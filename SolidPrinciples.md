@@ -745,6 +745,12 @@ class Vehicle {
         // return interior Width
     }
 }
+
+class Car {
+    func getCabinWidth() -> Double {
+        // return cabinWidth
+    }
+}
 ```
 
 
