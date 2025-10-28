@@ -840,6 +840,10 @@ class InHouseProduct: Product {
         super.init(discount: discount)
     }
 
+    override func getDiscount() -> Double {
+        return discount
+    }
+
     func applyExtraDiscount() {
         discount = discount * 2
     }
