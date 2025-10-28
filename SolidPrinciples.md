@@ -725,8 +725,10 @@ class FormulaOneRacingCar {
 }
 
 let cars: [Car] = [
-    
-] 
+    Car(),
+    Car(),
+    FormulaOneRacingCar()
+]
 
 ```
 
