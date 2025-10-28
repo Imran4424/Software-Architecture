@@ -852,10 +852,6 @@ let products: [Product] = [
 ]
 
 for product in products {
-    if let inHouse = product as? InHouseProduct {
-        inHouse.applyExtraDiscount()
-    }
-
     print("Discount amount:", product.getDiscount())
 }
 ```
