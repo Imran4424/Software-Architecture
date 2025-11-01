@@ -971,7 +971,17 @@ protocol MultiFunction {
 }
 
 extension MultiFunction {
-    
+    func print() {
+        print("Error! print is not supported")
+    }
+
+    func scan() {
+        print("Error! scan is not supported")
+    }
+
+    func fax(isInternet: Bool) {
+        print("Error! fax is not supported")
+    }
 }
 ```
 
