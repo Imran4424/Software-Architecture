@@ -892,14 +892,19 @@ Let's declare a protocol which will contain all the functions required for all t
 
 ```swift
 protocol MultiFunction {
-    void print()
-    void scan()
-    void fax(isInternet: Bool)
+    func print()
+    func scan()
+    func fax(isInternet: Bool)
 }
 ```
 Xerox machine functionality implementation
 
 ```swift
+class XeroxMachine: MultiFunction {
+    func print() {
+        // implement the print functionality
+    }
+}
 ```
 
 # Dependency Inversion Principle
