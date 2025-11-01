@@ -1018,5 +1018,7 @@ class Printer: MultiFunction {
 }
 ```
 
+The above implementation
+
 # Dependency Inversion Principle
 
