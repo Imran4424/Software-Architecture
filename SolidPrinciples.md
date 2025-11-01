@@ -899,6 +899,8 @@ protocol MultiFunction {
 ```
 Xerox machine functionality implementation
 
+```swift
+```
 
 # Dependency Inversion Principle
 
