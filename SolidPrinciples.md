@@ -917,6 +917,9 @@ class XeroxMachine: MultiFunction {
 
 So far everything looks fine.
 
+How about implementing the Scanner and  Printer combo machine.
+
+
 
 
 # Dependency Inversion Principle
