@@ -915,7 +915,7 @@ class XeroxMachine: MultiFunction {
 }
 ```
 
-So far everything looks fine
+So far everything looks fine.
 
 # Dependency Inversion Principle
 
