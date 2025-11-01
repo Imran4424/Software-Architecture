@@ -999,6 +999,7 @@ class XeroxMachine: MultiFunction {
     }
 }
 
+// PrintScanCombo machine is not implementing fax method since it don't support the functionality
 class PrintScanCombo: MultiFunction {
     func print() {
         // implement the print functionality
