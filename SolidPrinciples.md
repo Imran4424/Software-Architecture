@@ -878,7 +878,7 @@ Interface Segregation Principle(ISP) states that **No client should be forced to
 
 This is the first SOLID principle which talks about interface(in swift case protocol) rather than class.
 
-Let's consider a real life scenario to understand this problem.
+Consider a real life scenario to understand this problem.
 
 A office has three devices
 
@@ -916,6 +916,8 @@ class XeroxMachine: MultiFunction {
 ```
 
 So far everything looks fine.
+
+
 
 # Dependency Inversion Principle
 
