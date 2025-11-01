@@ -876,5 +876,7 @@ Now the above code follows the Liskov's Substitution Principle(LSP).
 
 Interface Segregation Principle(ISP) states that **No client should be forced to depend on others methods it does not use**
 
+This is the first SOLID principle which talks about interface(in swift case protocol)
+
 # Dependency Inversion Principle
 
