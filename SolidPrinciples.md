@@ -1006,10 +1006,6 @@ class PrintScanCombo: MultiFunction {
     func scan() {
         // implement the scan functionality
     }
-
-    func fax(isInternet: Bool) {
-        fatalError("Error! fax is not supported")
-    }
 }
 ```
 
