@@ -983,6 +983,20 @@ extension MultiFunction {
         print("Error! fax is not supported")
     }
 }
+
+class XeroxMachine: MultiFunction {
+    func print() {
+        // implement the print functionality
+    }
+
+    func scan() {
+        // implement the scan functionality
+    }
+
+    func fax(isInternet: Bool) {
+        // implement the fax functionality
+    }
+}
 ```
 
 # Dependency Inversion Principle
