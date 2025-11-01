@@ -874,5 +874,7 @@ Now the above code follows the Liskov's Substitution Principle(LSP).
 
 # Interface Segregation Principle
 
+Interface Segregation Principle(ISP) states that ****
+
 # Dependency Inversion Principle
 
