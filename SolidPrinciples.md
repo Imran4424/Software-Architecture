@@ -957,7 +957,7 @@ class Printer: MultiFunction {
 
 Same way, since printer don't support scan and fax functionality, upon calling these methods system will crush and show an error message.
 
-Above implementation which violates Interface Segregation Principle(ISP) 
+Above implementation forces all classes to implement all methods which violates Interface Segregation Principle(ISP) 
 
 # Dependency Inversion Principle
 
