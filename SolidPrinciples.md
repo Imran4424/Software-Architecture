@@ -940,6 +940,9 @@ Since, scanner and printer combo don't support fax functionality, if user attemp
 Implementation of Printer as follows
 
 ```swift
+class Printer: MultiFunction {
+    
+}
 ```
 
 # Dependency Inversion Principle
