@@ -997,6 +997,20 @@ class XeroxMachine: MultiFunction {
         // implement the fax functionality
     }
 }
+
+class PrintScanCombo: MultiFunction {
+    func print() {
+        // implement the print functionality
+    }
+
+    func scan() {
+        // implement the scan functionality
+    }
+
+    func fax(isInternet: Bool) {
+        fatalError("Error! fax is not supported")
+    }
+}
 ```
 
 # Dependency Inversion Principle
