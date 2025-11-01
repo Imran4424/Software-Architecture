@@ -897,6 +897,7 @@ protocol MultiFunction {
     void fax(isInternet: Bool)
 }
 ```
+Xerox machine functionality implementation
 
 
 # Dependency Inversion Principle
