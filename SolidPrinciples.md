@@ -919,7 +919,8 @@ So far everything looks fine.
 
 How about implementing the Scanner and  Printer combo machine.
 
-```
+```swift
+
 ```
 
 
