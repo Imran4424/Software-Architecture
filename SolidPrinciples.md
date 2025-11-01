@@ -963,5 +963,13 @@ Above implementation forces all classes to implement all methods of the protocol
 
 In Protocol Oriented Programming we can provide default implementation of protocol methods, so the if a class don't need certain methods, it can easily skip the method implementation.
 
+```swift
+protocol MultiFunction {
+    func print()
+    func scan()
+    func fax(isInternet: Bool)
+}
+```
+
 # Dependency Inversion Principle
 
