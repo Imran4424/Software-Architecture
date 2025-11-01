@@ -1010,6 +1010,7 @@ class PrintScanCombo: MultiFunction {
     }
 }
 
+// Printer only implementing print method since it needs only that
 class Printer: MultiFunction {
     func print() {
         // implement the print functionality
