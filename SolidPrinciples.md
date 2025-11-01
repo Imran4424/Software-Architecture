@@ -1020,5 +1020,7 @@ class Printer: MultiFunction {
 
 The above implementation does not violates Interface Segregation Principle(ISP) since it the protocol is not forcing anyone to implement all the methods.
 
+But there's still a issue, every classes who conforms the protocols will have the reference to the methods and their default implementation.
+
 # Dependency Inversion Principle
 
