@@ -904,6 +904,10 @@ class XeroxMachine: MultiFunction {
     func print() {
         // implement the print functionality
     }
+
+    func scan() {
+        // implement the scan functionality
+    }
 }
 ```
 
