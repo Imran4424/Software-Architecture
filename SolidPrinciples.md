@@ -984,6 +984,7 @@ extension MultiFunction {
     }
 }
 
+// Xerox machine class implementing all the methods since it supports all the function provided by the interface
 class XeroxMachine: MultiFunction {
     func print() {
         // implement the print functionality
