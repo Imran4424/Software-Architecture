@@ -959,5 +959,9 @@ Same way, since printer don't support scan and fax functionality, upon calling t
 
 Above implementation forces all classes to implement all methods of the protocol even if they don't use all of them which violates Interface Segregation Principle(ISP).
 
+# Workaround of Interface Segregation Principle (Protocol Oriented Programming)
+
+In Protocol Oriented Programming we can provide default implementation of protocol methods, so the if a class don't need certain methods, it can easily skip the method implementation.
+
 # Dependency Inversion Principle
 
