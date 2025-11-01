@@ -1007,6 +1007,20 @@ class PrintScanCombo: MultiFunction {
         // implement the scan functionality
     }
 }
+
+class Printer: MultiFunction {
+    func print() {
+        // implement the print functionality
+    }
+
+    func scan() {
+        fatalError("Error! scan is not supported")
+    }
+
+    func fax(isInternet: Bool) {
+        fatalError("Error! fax is not supported")
+    }
+}
 ```
 
 # Dependency Inversion Principle
