@@ -880,5 +880,14 @@ This is the first SOLID principle which talks about interface(in swift case prot
 
 Let's consider a real life scenario to understand this problem.
 
+A office has three devices
+
+| Xerox Machine    | Printer and Scanner | Printer |
+| ---------------- | -------------------- | -------------------- |
+| ![Xerox Machine](Xerox.png) | ![Printer and Scanner](PrintNScan.png) | ![Printer](Printer.png) |
+
+Now, a programmer need to design a system by which user's of the office can use these devices.
+
+
 # Dependency Inversion Principle
 
