@@ -1022,5 +1022,7 @@ The above implementation does not violates Interface Segregation Principle(ISP) 
 
 But there's still a issue, every classes who conforms the protocols will have the reference to the methods and their default implementation.
 
+There can be an ambiguous situation where user might call the method and wondering why the functionality is not working.  
+
 # Dependency Inversion Principle
 
