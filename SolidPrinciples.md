@@ -874,7 +874,7 @@ Now the above code follows the Liskov's Substitution Principle(LSP).
 
 # Interface Segregation Principle
 
-Interface Segregation Principle(ISP) states that ****
+Interface Segregation Principle(ISP) states that **No client should be forced to depend on others methods it does not use**
 
 # Dependency Inversion Principle
 
