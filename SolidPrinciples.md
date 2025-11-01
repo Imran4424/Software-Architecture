@@ -935,6 +935,7 @@ class PrintScanCombo: MultiFunction {
 }
 ```
 
+Since, scanner and printer combo don't support fax functionality, if user attempt to use fax function it will crush and show error message.
 
 # Dependency Inversion Principle
 
