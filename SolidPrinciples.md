@@ -955,5 +955,7 @@ class Printer: MultiFunction {
 }
 ```
 
+Same way, since printer don't support scan and fax functionality, upon calling these methods system will crush and show an error message.
+
 # Dependency Inversion Principle
 
