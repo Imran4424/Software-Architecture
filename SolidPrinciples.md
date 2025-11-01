@@ -941,7 +941,17 @@ Implementation of Printer as follows
 
 ```swift
 class Printer: MultiFunction {
-    
+    func print() {
+        // implement the print functionality
+    }
+
+    func scan() {
+        // implement the scan functionality
+    }
+
+    func fax(isInternet: Bool) {
+        fatalError("Error! fax is not supported")
+    }
 }
 ```
 
