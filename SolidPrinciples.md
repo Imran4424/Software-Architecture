@@ -888,6 +888,8 @@ A office has three devices
 
 Now, we as programmer need to design a system by which user's of the office can use these devices.
 
+Let's declare a protocol which will contain all the functions required for all these devices
+
 ```swift
 protocol MultiFunction {
     void print()
