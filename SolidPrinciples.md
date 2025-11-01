@@ -1025,6 +1025,7 @@ But there's still a issue, every classes who conforms the protocols will have th
 There can be an ambiguous situation where user might call the method and wondering why the functionality is not working. And if it is not working why it is there.
 
 ![What this button do](WhatThisButtonDo.jpg)
+**What does this button do?**
 
 # Dependency Inversion Principle
 
