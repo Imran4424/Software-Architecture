@@ -886,7 +886,15 @@ A office has three devices
 | ---------------- | -------------------- | -------------------- |
 | ![Xerox Machine](Xerox.png) | ![Printer and Scanner](PrintNScan.png) | ![Printer](Printer.png) |
 
-Now, a programmer need to design a system by which user's of the office can use these devices.
+Now, we as programmer need to design a system by which user's of the office can use these devices.
+
+```swift
+protocol MultiFunction {
+    void print()
+    void scan()
+    void fax(isInternet: Bool)
+}
+```
 
 
 # Dependency Inversion Principle
