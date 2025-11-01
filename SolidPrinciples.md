@@ -946,7 +946,7 @@ class Printer: MultiFunction {
     }
 
     func scan() {
-        // implement the scan functionality
+        fatalError("Error! scan is not supported")
     }
 
     func fax(isInternet: Bool) {
