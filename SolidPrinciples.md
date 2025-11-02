@@ -1094,6 +1094,7 @@ The above implementation not only does not violates Interface Segregation Princi
 - Enhanced flexibility: Clients can depend on only the specific interfaces they need
 - Improves Code Maintainability.
 - Easier for testing
+- Reduced complexity
 
 # Dependency Inversion Principle
 
