@@ -1048,7 +1048,7 @@ protocol FaxFunction {
 Now, implements the classes according to their functionality needs
 
 ```swift
-// Xerox machine class implementing all the methods since it supports all the function provided by the interface
+// Xerox machine class implementing 
 class XeroxMachine: MultiFunction {
     func print() {
         // implement the print functionality
