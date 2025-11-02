@@ -1082,7 +1082,7 @@ class Printer: PrintFunction {
 }
 ```
 
-The above implementation does not violates Interface Segregation Principle
+The above implementation does not violates Interface Segregation Principle(ISP)
 
 # Dependency Inversion Principle
 
