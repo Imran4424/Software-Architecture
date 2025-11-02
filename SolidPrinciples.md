@@ -1032,12 +1032,6 @@ There can be an ambiguous situation where user might call the method and wonderi
 To Properly address the issue, let's  separate the protocol according to the functionality
 
 ```swift
-protocol MultiFunction {
-    func print()
-    func scan()
-    func fax(isInternet: Bool)
-}
-
 protocol PrintFunction {
     func print()
 }
