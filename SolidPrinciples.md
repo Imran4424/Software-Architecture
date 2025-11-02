@@ -332,6 +332,7 @@ Key takeaways:
 - Using protocols plus dependency injection lowers coupling, isolates reasons to change, and improves testability and reuse.
 
 ### Notes on Coupling (and SRP)
+
 - Low coupling supports SRP by keeping each class focused and less impacted by unrelated changes.
 - Symptoms of tight coupling: 
     - creating dependencies inside a class (`new`/direct initializers)
