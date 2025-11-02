@@ -1093,7 +1093,7 @@ The above implementation not only does not violates Interface Segregation Princi
 #### Benefits of Interface Segregation Principle
 - Enhances flexibility: Clients can depend on only the specific interfaces they need
 - Improves Code Maintainability.
-- Easier for testing
+- Easier for testing.
 - Reduces complexity
 - Robust and Scalable System
 - Cleaner Contracts: Interfaces are more focused and easier for clients to understand and use.
