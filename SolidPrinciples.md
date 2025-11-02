@@ -1031,6 +1031,8 @@ There can be an ambiguous situation where user might call the method and wonderi
 
 To Properly address the issue, let's  divide the protocol according to the functionality
 
+```swift
+```
 
 # Dependency Inversion Principle
 
