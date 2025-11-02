@@ -197,6 +197,7 @@ service.issueReceipt(for: order, to: "user@example.com")
 ```
 
 ### Notes on Coupling (and SRP)
+
 - Cohesion is how closely the methods and data inside a class work toward the same
     - High Cohesion: one clear job
     - Low Cohesion: mixed, unrelated jobs inside one class.
