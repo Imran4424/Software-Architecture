@@ -1048,6 +1048,38 @@ protocol FaxFunction {
 Now, implements the classes according to their functionality needs
 
 ```swift
+// Xerox machine class implementing all the methods since it supports all the function provided by the interface
+class XeroxMachine: MultiFunction {
+    func print() {
+        // implement the print functionality
+    }
+
+    func scan() {
+        // implement the scan functionality
+    }
+
+    func fax(isInternet: Bool) {
+        // implement the fax functionality
+    }
+}
+
+// PrintScanCombo machine is not implementing fax method since it don't support the functionality
+class PrintScanCombo: MultiFunction {
+    func print() {
+        // implement the print functionality
+    }
+
+    func scan() {
+        // implement the scan functionality
+    }
+}
+
+// Printer only implementing print method since it needs only that
+class Printer: MultiFunction {
+    func print() {
+        // implement the print functionality
+    }
+}
 ```
 
 # Dependency Inversion Principle
