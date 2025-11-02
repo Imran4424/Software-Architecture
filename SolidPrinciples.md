@@ -1074,7 +1074,7 @@ class PrintScanCombo: PrintFunction, ScanFunction {
     }
 }
 
-// Printer class only implementing PrintFunction
+// Printer class only conforming PrintFunction
 class Printer: PrintFunction {
     func print() {
         // implement the print functionality
