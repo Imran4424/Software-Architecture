@@ -1048,7 +1048,7 @@ protocol FaxFunction {
 Now, implements the classes according to their functionality needs
 
 ```swift
-// Xerox machine class implementing PrintFunction, ScanFunction, FaxFunction
+// Xerox machine class conforming PrintFunction, ScanFunction, FaxFunction
 class XeroxMachine: PrintFunction, ScanFunction, FaxFunction {
     func print() {
         // implement the print functionality
