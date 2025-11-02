@@ -1088,7 +1088,7 @@ The above implementation not only does not violates Interface Segregation Princi
 - Interfaces with high number of methods (Protocols in Swift)
 - Interfaces with low cohesion (does not follow single responsibility principle)
 - Empty method implementations
-- 
+- Do not follow Liskov's  Substitution principle 
 
 # Dependency Inversion Principle
 
