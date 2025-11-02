@@ -1049,7 +1049,7 @@ Now, implements the classes according to their functionality needs
 
 ```swift
 // Xerox machine class implementing 
-class XeroxMachine: MultiFunction {
+class XeroxMachine: PrintFunction, ScanFunction, FaxFunction {
     func print() {
         // implement the print functionality
     }
