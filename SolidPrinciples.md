@@ -1088,6 +1088,5 @@ The above implementation not only does not violates Interface Segregation Princi
 
 
 
-
 # Dependency Inversion Principle
 
