@@ -1045,5 +1045,9 @@ protocol FaxFunction {
 }
 ```
 
+Now, implements the classes according to their functionality needs
+
+
+
 # Dependency Inversion Principle
 
