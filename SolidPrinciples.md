@@ -1045,6 +1045,8 @@ protocol PrintFunction {
 protocol ScanFunction {
     func scan()
 }
+
+
 ```
 
 # Dependency Inversion Principle
