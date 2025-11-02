@@ -1086,8 +1086,9 @@ The above implementation not only does not violates Interface Segregation Princi
 
 #### Methods to identify the violations of Interface Segregation Principle(ISP)
 - Interfaces with high number of methods (Protocols in Swift)
-- Interfaces with low cohesion
+- Interfaces with low cohesion (does not follow single responsibility principle)
 - Empty method implementations
+- 
 
 # Dependency Inversion Principle
 
