@@ -1096,6 +1096,7 @@ The above implementation not only does not violates Interface Segregation Princi
 - Easier for testing
 - Reduces complexity
 - Robust and Scalable System
+- Cleaner Contracts: Interfaces are more focused and easier for clients to understand and use.
 
 # Dependency Inversion Principle
 
