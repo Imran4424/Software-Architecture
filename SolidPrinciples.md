@@ -1047,7 +1047,8 @@ protocol FaxFunction {
 
 Now, implements the classes according to their functionality needs
 
-
+```swift
+```
 
 # Dependency Inversion Principle
 
