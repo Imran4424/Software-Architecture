@@ -1091,6 +1091,7 @@ The above implementation not only does not violates Interface Segregation Princi
 - Do not follow Liskov's  Substitution principle 
 
 #### Benefits of Interface Segregation Principle
+- Improves Code Maintainability.
 
 # Dependency Inversion Principle
 
