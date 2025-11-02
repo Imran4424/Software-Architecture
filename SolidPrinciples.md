@@ -1094,6 +1094,13 @@ The above implementation not only does not violates Interface Segregation Princi
 
 # Dependency Inversion Principle
 
+- Increased Code Reusability: Generic reference uses.
+- Improve Code Quality and Reliability - No need to worry about unexpected behavior of generic reference uses.
+- Enhanced Flexibility and Extensibility: Systems can be extended by adding new subclasses without needing to modify existing client code that uses the base class.
+- Improves Code Maintainability.
+- Reduced Coupling: LSP helps lower the coupling between objects, which makes your code more modular and less prone to bugs when changes are made.
+- Easier for testing: We can use dependency injection using mocks for testing purposes.
+
 # Conclusion
 
 SOLID principles complement each other and work together in unison, to achieve common goal of well-designed software system.
