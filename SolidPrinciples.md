@@ -1085,7 +1085,7 @@ class Printer: PrintFunction {
 The above implementation not only does not violates Interface Segregation Principle(ISP) but also address the ambiguous situation of Protocol Oriented Programming approach.
 
 #### Methods to identify the violations of Interface Segregation Principle(ISP)
-- Interfaces with high number of methods (Protocols  in Swift)
+- Interfaces with high number of methods (Protocols in Swift)
 - 
 
 # Dependency Inversion Principle
