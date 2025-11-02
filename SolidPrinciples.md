@@ -1063,7 +1063,7 @@ class XeroxMachine: PrintFunction, ScanFunction, FaxFunction {
     }
 }
 
-// PrintScanCombo class implementing PrintFunction, ScanFunction
+// PrintScanCombo class conforming PrintFunction, ScanFunction
 class PrintScanCombo: PrintFunction, ScanFunction {
     func print() {
         // implement the print functionality
