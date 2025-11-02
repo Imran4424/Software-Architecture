@@ -686,6 +686,7 @@ With this approach code is now easily expandable as business grows.
 - Encourages clean boundaries, protocols, and composition.
 
 #### Caution
+
 - Do not follow the open closed principle blindly.
 - You will end up with a huge number of classes that can complicate overall design.
 
