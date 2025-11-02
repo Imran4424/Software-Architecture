@@ -1046,7 +1046,9 @@ protocol ScanFunction {
     func scan()
 }
 
-
+protocol FaxFunction {
+    func fax(isInternet: Bool)
+}
 ```
 
 # Dependency Inversion Principle
