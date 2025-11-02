@@ -1094,7 +1094,7 @@ The above implementation not only does not violates Interface Segregation Princi
 - Enhances flexibility: Clients can depend on only the specific interfaces they need
 - Improves Code Maintainability.
 - Easier for testing.
-- Reduces complexity
+- Reduces complexity.
 - Robust and Scalable System
 - Cleaner Contracts: Interfaces are more focused and easier for clients to understand and use.
 
