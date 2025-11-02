@@ -1085,5 +1085,7 @@ class Printer: PrintFunction {
 The above implementation not only does not violates Interface Segregation Principle(ISP) but also address the ambiguous situation of Protocol Oriented Programming approach.
 
 
+
+
 # Dependency Inversion Principle
 
