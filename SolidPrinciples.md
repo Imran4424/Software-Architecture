@@ -1037,6 +1037,10 @@ protocol MultiFunction {
     func scan()
     func fax(isInternet: Bool)
 }
+
+protocol PrintFunction {
+    func print()
+}
 ```
 
 # Dependency Inversion Principle
