@@ -376,6 +376,7 @@ Open/Closed Principle (OCP) states that software entities should be **open for e
 In practice this typically means depending on abstractions (protocols), using composition, and leveraging polymorphism instead of conditional explosions.
 
 ### Notes
+
 - Extend via new types that conform to protocols; avoid modifying core algorithms when adding cases.
 - Replace long `if`/`switch` conditionals on “type” with polymorphism (strategy, state, command, etc.).
 - Prefer composition over inheritance; pass behavior in as dependencies.
