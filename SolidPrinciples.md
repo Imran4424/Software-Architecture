@@ -1027,5 +1027,7 @@ There can be an ambiguous situation where user might call the method and wonderi
 [![Image alt text](WhatThisButtonDo.jpg)](https://www.youtube.com/watch?v=pMuVm1Y669U)
 **What does this button do?**
 
+### Application of Interface Segregation Principle
+
 # Dependency Inversion Principle
 
