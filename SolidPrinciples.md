@@ -1041,6 +1041,10 @@ protocol MultiFunction {
 protocol PrintFunction {
     func print()
 }
+
+protocol ScanFunction {
+    func scan()
+}
 ```
 
 # Dependency Inversion Principle
