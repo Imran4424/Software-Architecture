@@ -1101,7 +1101,6 @@ The above implementation not only does not violates Interface Segregation Princi
 # Dependency Inversion Principle
 
 
-
 # Conclusion
 
 SOLID principles complement each other and work together in unison, to achieve common goal of well-designed software system.
