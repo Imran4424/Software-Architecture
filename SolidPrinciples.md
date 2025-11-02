@@ -1091,10 +1091,10 @@ The above implementation not only does not violates Interface Segregation Princi
 - Do not follow Liskov's  Substitution principle 
 
 #### Benefits of Interface Segregation Principle
-- Enhanced flexibility: Clients can depend on only the specific interfaces they need
+- Enhances flexibility: Clients can depend on only the specific interfaces they need
 - Improves Code Maintainability.
 - Easier for testing
-- Reduced complexity
+- Reduces complexity
 
 # Dependency Inversion Principle
 
