@@ -1094,4 +1094,4 @@ The above implementation not only does not violates Interface Segregation Princi
 
 # Conclusion
 
-SOLID principles complement each other and work together
+SOLID principles complement each other and work together in unison
