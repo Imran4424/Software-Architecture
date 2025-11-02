@@ -362,6 +362,7 @@ Key takeaways:
 So, it is safe to say that Single Responsibility principle is achieved by aiming for low coupling and high cohesion.
 
 ### Benefits of Single Responsibility Principle
+
 - Easy to maintain the code base (Highly Scalable)
 - Enhanced Readability
 - A class with high cohesion is simpler to test
