@@ -1118,7 +1118,7 @@ Although, Dependency principle has two parts, fundamental concepts behind both p
 
 If a software design follows one part the other part will be followed as well.
 
-To understand the dependency relationship between high low module 
+To understand the dependency relationship between high low module, let's consider a e-commerce site dependency diagram.
 
 ![High Low Diagram](E-Commerce.png)
 
