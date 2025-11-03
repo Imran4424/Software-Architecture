@@ -1126,7 +1126,7 @@ For better understanding, How about focusing on only Product Catalog.
 
 ![Product Catalog](ProductCatalog.png)
 
-
+Here, Product Catalog a high level module depends on `SQLProductRepository` a low level module.
 
 
 ![Follow DPI](FollowDPI.png)
