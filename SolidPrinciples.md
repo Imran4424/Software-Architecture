@@ -1129,6 +1129,11 @@ For better understanding, How about focusing on only Product Catalog.
 Here, Product Catalog a high level module depends on `SQLProductRepository` a low level module.
 
 ```swift
+class SQLProductRepository {
+    func getAllProducts() -> [Product] {
+        // return all products from database
+    }
+}
 ```
 
 
