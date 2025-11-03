@@ -1118,6 +1118,8 @@ Although, Dependency principle has two parts, fundamental concepts behind both p
 
 If a software design follow one part the other part will be followed as well.
 
+[HighLowDiagram](E-CommerceDiagram.png)
+
 # Conclusion
 
 SOLID principles complement each other and work together in unison, to achieve common goal of well-designed software system.
