@@ -1118,7 +1118,7 @@ Although, Dependency principle has two parts, fundamental concepts behind both p
 
 If a software design follow one part the other part will be followed as well.
 
-[HighLowDiagram](E-CommerceDiagram.png)
+![HighLowDiagram](E-CommerceDiagram.png)
 
 # Conclusion
 
