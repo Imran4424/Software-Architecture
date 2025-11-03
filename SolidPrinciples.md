@@ -1114,6 +1114,7 @@ High level modules should not depend on low level modules. Both should depend on
 Same way,
 Abstractions should not depend on details. Details should depend on abstractions.
 
+Although, Dependency principle has two parts, fundamental concepts behind both parts is the same.
 
 # Conclusion
 
