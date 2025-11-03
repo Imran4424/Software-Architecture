@@ -1132,5 +1132,3 @@ Let's consider the Product Catalog part
 # Conclusion
 
 SOLID principles complement each other and work together in unison, to achieve common goal of well-designed software system.
-
-SHARIA JAHAN SOUDHA
