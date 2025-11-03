@@ -1122,7 +1122,7 @@ To understand the dependency relationship between high low module, let's conside
 
 ![High Low Diagram](E-Commerce.png)
 
-For better understanding, 
+For better understanding, How about focusing on only Product Catalog.
 
 ![Product Catalog](ProductCatalog.png)
 
