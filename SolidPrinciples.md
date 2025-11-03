@@ -1116,7 +1116,7 @@ Abstractions should not depend on details. Details should depend on abstractions
 
 Although, Dependency principle has two parts, fundamental concepts behind both parts is the same.
 
-If a software design follow one part the other part will be followed as well.
+If a software design follows one part the other part will be followed as well.
 
 ![High Low Diagram](E-Commerce.png)
 ![Product Catalog](ProductCatalog.png)
