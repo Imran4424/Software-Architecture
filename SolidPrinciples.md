@@ -1125,7 +1125,6 @@ Abstractions should not depend on details. Details should depend on abstractions
 
 
 
-
 # Conclusion
 
 SOLID principles complement each other and work together in unison, to achieve common goal of well-designed software system.
