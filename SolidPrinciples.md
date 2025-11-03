@@ -1111,7 +1111,7 @@ The above implementation not only does not violates Interface Segregation Princi
 Dependency Inversion principle has two parts,
 
 High level modules should not depend on low level modules. Both should depend on abstractions.
-Same way
+Same way,
 Abstractions should not depend on details. Details should depend on abstractions.
 
 # Conclusion
