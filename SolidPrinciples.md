@@ -1130,7 +1130,11 @@ Here, Product Catalog a high level module depends on `SQLProductRepository` a lo
 
 ```swift
 class ProductCatalog {
-    
+    func listAllProducts() {
+        let sqlProductRepo = SQLProductRepository()
+        let allProducts = sqlProductRepo.getAllProducts()
+        // Display all products
+    }
 }
 
 class SQLProductRepository {
